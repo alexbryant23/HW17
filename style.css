@@ -1,0 +1,134 @@
+main {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 5px;
+    margin: 100px;
+    font-family: "source sans pro"
+}
+body{
+    background-color: brown;
+}
+
+.box {
+    height: 100%;
+    background-color: #999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.be-happy{
+display: flex;
+justify-content: center;
+}
+
+.center-lorem{
+    display: flex;
+    justify-content: center;
+}
+
+.cupcake, .lorem, .bacon{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.tie, .moped, .flower, .jazz{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.happy, .neon, .light{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.box-happy{
+    background-color: red;
+    color: white;
+    padding: auto;
+}
+.box-cupcake{
+    background-color: aquamarine;
+    color: white;
+    padding: 5px;
+}
+
+.box-tie{
+    background-image: url(images/tie.png);
+    background-size: contain;
+    
+}
+
+
+.box-neon{
+    background-image: url(images/sign.jpg);
+}
+
+.box-lorem{
+    background-color: aquamarine;
+    color: white;
+}
+
+.box-moped{
+    background-image: url(images/moped.jpg);
+
+}
+
+.box-light{
+    background-image: url(images/light.jpg);
+
+}
+
+.box-bacon{
+    background-color: aquamarine;
+    color: white;
+}
+
+.box-flower{
+    background-image: url(images/flower.jpg);
+
+}
+
+.box-jazz{
+    background-image: url(images/sax.jpg);
+
+}
+
+
+  @media only screen and (min-width: 600px){
+
+  main {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 100px;
+}
+
+.box {
+    height: 100%;
+    background-color: #999;
+    display: grid;
+    justify-content: center;
+    align-items: center;   
+  }
+
+.bacon, .neon, .lorem, .cupcake{
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.tie, .moped {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.happy, .jazz, .light, .flower {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+}
